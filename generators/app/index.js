@@ -42,10 +42,27 @@ module.exports = yeoman.generators.Base.extend({
 
     // Copy config files
     config: function () {
-      this.fs.copyTpl(this.templatePath(""), this.destinationPath(""), { name: this.props.name });
+      this.fs.copy(this.templatePath("gitignore"), this.destinationPath(".gitignore"));
+      this.fs.copy(this.templatePath("README.md"), this.destinationPath("README.md"));
+      this.fs.copyTpl(this.templatePath("package.json"), this.destinationPath("package.json"), {
+        name: this.props.name,
+      });
+      this.fs.copyTpl(this.templatePath("package-lock.json"), this.destinationPath("package-lock.json"), {
+        name: this.props.name,
+      });
     },
 
     // Copy application files
+    app: function () {
+      // PUBLIC
+      this.fs.copy(this.templatePath("public/favicon.ico"), this.destinationPath("public/favicon.ico"));
+      this.fs.copy(this.templatePath("public/index.html"), this.destinationPath("public/index.html"));
+      this.fs.copy(this.templatePath("public/logo192.png"), this.destinationPath("public/logo192.png"));
+      this.fs.copy(this.templatePath("public/logo512.png"), this.destinationPath("public/logo512.png"));
+      this.fs.copy(this.templatePath("public/manifest.json"), this.destinationPath("public/manifest.json"));
+      this.fs.copy(this.templatePath("public/robots.txt"), this.destinationPath("public/robots.txt"));
+    },
+
     // Install dependancies
   },
 });
