@@ -1,7 +1,7 @@
 {
   "name": "generator-cra",
   "version": "0.1.0",
-  "description": "A yo generator that extends CRA (create-react-app) with small tweaks and templates for my personal convenience.",
+  "description": "Extends CRA (create-react-app). It tweaks the default CRA slightly and I will be adding subcommands for templates too for my personal convenience.",
   "files": [
     "generators"
   ],

@@ -1,0 +1,6 @@
+[submodule "generators/app/templates"]
+	path = generators/app/templates
+	url = https://github.com/NeeshSamsi/template-cra
+[submodule "generators/tw/templates"]
+	path = generators/tw/templates
+	url = https://github.com/NeeshSamsi/template-cra-tw
