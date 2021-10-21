@@ -1,0 +1,24 @@
+{
+  "name": "generator-cra",
+  "version": "0.1.0",
+  "description": "A yo generator that extends CRA (create-react-app) with small tweaks and templates for my personal convenience.",
+  "files": [
+    "generators"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/NeeshSamsi/yo-generator-cra.git"
+  },
+  "keywords": [
+    "yeoman-generator"
+  ],
+  "author": "Neesh Samsi",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/NeeshSamsi/yo-generator-cra/issues"
+  },
+  "homepage": "https://github.com/NeeshSamsi/yo-generator-cra#readme",
+  "dependencies": {
+    "yeoman-generator": "^5.4.2"
+  }
+}
