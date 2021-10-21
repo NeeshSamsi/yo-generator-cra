@@ -61,6 +61,9 @@ module.exports = yeoman.generators.Base.extend({
       this.fs.copy(this.templatePath("public/logo512.png"), this.destinationPath("public/logo512.png"));
       this.fs.copy(this.templatePath("public/manifest.json"), this.destinationPath("public/manifest.json"));
       this.fs.copy(this.templatePath("public/robots.txt"), this.destinationPath("public/robots.txt"));
+
+      // SRC
+      this.fs.copy(this.templatePath("src/App.js"), this.destinationPath("src/App.js"));
     },
 
     // Install dependancies
